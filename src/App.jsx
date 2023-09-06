@@ -3,16 +3,16 @@ import NavBar from "./components/NavBar";
 export default function App() {
   return (
     <main>
-      <section>
+      <section id="home">
         <Home />
       </section>
-      <section>
+      <section id="about">
         <About />
       </section>
-      <section>
+      <section id="skills">
         <Skills />
       </section>
-      <section>
+      <section id="contact">
         <Contact />
       </section>
       <NavBar />

@@ -1,8 +1,8 @@
 const Skills = () => {
   return (
-    <div id="skills" className="h-screen w-full bg-white">
-      Skills
-    </div>
+    <section className="bg-black h-screen">
+      <h1 className="white-title">My Skills!</h1>
+    </section>
   );
 };
 
