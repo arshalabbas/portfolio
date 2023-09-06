@@ -10,7 +10,7 @@ import emailIcon from "../assets/icons/envelop.svg";
 
 const Home = () => {
   return (
-    <section className="w-100 bg-black text-white">
+    <section id="home" className="w-100 bg-black text-white">
       <div className="bs-container flex flex-col w-full h-screen">
         <div className="w-100 py-4">
           <p className="font-barcode text-center text-2xl text-white">

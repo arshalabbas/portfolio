@@ -1,5 +1,5 @@
 import { Home, About, Skills, Contact } from "./sections";
-
+import NavBar from "./components/NavBar";
 export default function App() {
   return (
     <main>
@@ -15,6 +15,7 @@ export default function App() {
       <section>
         <Contact />
       </section>
+      <NavBar />
     </main>
   );
 }

@@ -11,6 +11,13 @@
     *, html {
         scroll-behavior: smooth !important;
     }
+    body {
+        background-color: #fff;
+    }
+    /* .sticky-nav {
+        position: sticky;
+        bottom: 0;
+    } */
 }
 
 @layer components {
