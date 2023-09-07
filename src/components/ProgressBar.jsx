@@ -5,7 +5,8 @@ const ProgressBar = ({ label, percentage }) => {
     <div className="flex items-center">
       <div className="max-md:w-full lg:w-[70%] w-[75%] bg-gray-400 my-3 flex">
         <div
-          className={`w-[${percentage}%] bg-white py-1 font-biriyani font-bold`}
+          style={{ width: `${percentage}%` }}
+          className={`bg-white py-1 font-biriyani font-bold`}
         >
           <p className="text-black ml-3">{label}</p>
         </div>
