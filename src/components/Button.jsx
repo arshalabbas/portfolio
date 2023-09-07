@@ -1,4 +1,4 @@
-const Button = ({ label, href, onClick }) => {
+const Button = ({ label, href }) => {
   return (
     <a
       href={href}

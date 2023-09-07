@@ -1,4 +1,4 @@
-import { Home, About, Skills, Contact } from "./sections";
+import { Home, About, Skills, Contact, Footer } from "./sections";
 import NavBar from "./components/NavBar";
 export default function App() {
   return (
@@ -16,6 +16,7 @@ export default function App() {
         <Contact />
       </section>
       <NavBar />
+      <Footer />
     </main>
   );
 }

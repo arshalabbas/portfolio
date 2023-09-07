@@ -31,7 +31,7 @@ const Home = () => {
               A FULL STACK DEVELOPER?
             </h2>
             <div className="w-full flex max-md:justify-center">
-              <Button href={"#about"} label={"MORE ABOUT ME!"} />
+              <Button href={"#about"} label={"MORE ABOUT ME!"} theme={"dark"} />
             </div>
           </div>
 
