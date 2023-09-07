@@ -8,6 +8,7 @@ export default {
         biriyani: ["Biryani", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],
         barcode: ["Libre Barcode 39 Text", "cursive"],
+        explora: ["Explora", "cursive"],
       },
     },
   },
