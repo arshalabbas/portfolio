@@ -12,7 +12,7 @@ export default function App() {
       <section id="skills">
         <Skills />
       </section>
-      <section id="contact">
+      <section id="contact" className="mb-11">
         <Contact />
       </section>
       <NavBar />

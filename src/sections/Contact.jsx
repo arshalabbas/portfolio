@@ -27,15 +27,6 @@ const Contact = () => {
             >
               {state.submitting ? "SUBMITTING..." : "SUBMIT"}
             </button>
-
-            {state.succeeded ? (
-              <div className="w-full my-5">
-                <h1 className="font-biriyani font-bold text-black text-lg text-center">
-                  Thank you for contacting me :)
-                </h1>
-              </div>
-            ) : null}
-
             <ValidationError prefix="Name" field="name" errors={state.errors} />
             <ValidationError
               prefix="Email"
@@ -47,6 +38,13 @@ const Contact = () => {
               field="message"
               errors={state.errors}
             />
+            {state.succeeded ? (
+              <div className="w-full my-5">
+                <h1 className="font-biriyani font-bold text-black text-lg text-center">
+                  Thank you for contacting me :)
+                </h1>
+              </div>
+            ) : null}
           </form>
         </div>
       </div>

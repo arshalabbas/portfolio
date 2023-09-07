@@ -15,7 +15,7 @@ const Footer = () => {
           stunning photo) haha!
         </p>
         <a href="#home">
-          <img src={topSvg} className="absolute bottom-[-15px]" />
+          <img src={topSvg} className="absolute bottom-[-20px]" />
         </a>
       </div>
       <div className="bg-white text-black pt-11 pb-3">
