@@ -11,7 +11,7 @@ import userImage from "../assets/images/me.jpg";
 
 const About = () => {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white py-1">
       <div className="bs-container w-full">
         <h1 className="black-title">About Me!</h1>
         <p className="text-center opacity-70 max-md:text-sm">
