@@ -9,10 +9,10 @@ export default function App() {
       <section id="about">
         <About />
       </section>
-      <section id="skills">
+      <section id="skills" className="py-11 bg-black">
         <Skills />
       </section>
-      <section id="contact" className="mb-11">
+      <section id="contact" className="mb-4 pb-11 bg-white">
         <Contact />
       </section>
       <NavBar />

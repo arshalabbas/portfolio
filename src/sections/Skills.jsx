@@ -4,7 +4,7 @@ import { skillsArray } from "../constants";
 
 const Skills = () => {
   return (
-    <section className="bg-black h-screen py-1 text-white w-full">
+    <section className="bg-black h-screen text-white w-full">
       <div className="bs-container w-full">
         <h1 className="white-title mb-6">My Skills!</h1>
         {skillsArray.map((skill) => (
