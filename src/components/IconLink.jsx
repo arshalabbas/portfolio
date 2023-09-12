@@ -4,7 +4,7 @@ const IconLink = ({ iconURL, href }) => {
       <img
         src={iconURL}
         alt="social-icon"
-        className="w-10 h-10 opacity-60 hover:opacity-100"
+        className="w-10 h-10 opacity-60 hover:opacity-100 to-reveal from-r"
       />
     </a>
   );

@@ -13,19 +13,19 @@ const About = () => {
   return (
     <section className="w-full bg-white py-1">
       <div className="bs-container w-full">
-        <h1 className="black-title">About Me!</h1>
-        <p className="text-center opacity-70 max-md:text-sm font-biriyani">
+        <h1 className="black-title to-reveal from-l">About Me!</h1>
+        <p className="text-center opacity-70 max-md:text-sm font-biriyani to-reveal from-r">
           white? Yeah, cuz it’s a boring page
         </p>
 
-        <div className="flex justify-between items-center max-md:flex-col-reverse">
+        <div className="flex justify-between items-center max-md:flex-col-reverse to-reveal from-l">
           <div>
             <ImagePoint label={"Adaptive"} imageURL={puzzleIcon} />
             <ImagePoint label={"Creative"} imageURL={lightBulbIcon} />
             <ImagePoint label={"Flexible"} imageURL={flexIcon} />
             <ImagePoint label={"Continues Learner"} imageURL={codeIcon} />
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center to-reveal from-r">
             <img
               className="w-80 h-80 rounded-full my-4"
               src={userImage}

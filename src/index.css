@@ -14,10 +14,38 @@
     body {
         background-color: #fff;
     }
-    /* .sticky-nav {
-        position: sticky;
-        bottom: 0;
-    } */
+    .to-reveal {
+        opacity: 0;
+        filter: blur(5px);
+        transition: all 1s;
+    }
+    .from-t {
+        transform: translateY(-100%);
+    }
+    .from-l {
+        transform: translateX(-100%);
+    }
+    .from-r {
+        transform: translateX(100%);
+    }
+    .from-b {
+        transform: translateY(100%);
+    }
+    .reveal {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+
+    .fill-bar {
+        width: 0;
+        overflow-x: hidden;
+        transition: all 1.8s;
+    }
+    .filled-bar {
+        width: 100%;
+    }
 }
 
 @layer components {

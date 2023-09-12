@@ -9,8 +9,8 @@ const Contact = () => {
     <section className="bg-white h-screen text-black w-full">
       <Wave />
       <div className="bs-container flex flex-col items-center">
-        <h1 className="black-title">Contact Me!</h1>
-        <p className="text-center opacity-70 max-md:text-sm font-biriyani">
+        <h1 className="black-title to-reveal from-l">Contact Me!</h1>
+        <p className="text-center opacity-70 max-md:text-sm font-biriyani to-reveal from-r">
           Have a question or want to work together?
         </p>
         <div className="my-7">
@@ -40,7 +40,7 @@ const Contact = () => {
             />
             {state.succeeded ? (
               <div className="w-full my-5">
-                <h1 className="font-biriyani font-bold text-black text-lg text-center">
+                <h1 className="font-biriyani font-bold text-black text-lg text-center animate-pulse">
                   Thank you for contacting me :)
                 </h1>
               </div>
