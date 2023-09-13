@@ -1,7 +1,10 @@
 import { Home, About, Skills, Contact, Footer } from "./sections";
 import NavBar from "./components/NavBar";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 export default function App() {
+  const [activeSection, setActiveSection] = useState("home");
+
+  //Reveal animation on scroll
   useEffect(() => {
     const toRevealItems = document.querySelectorAll(".to-reveal");
 
@@ -15,6 +18,37 @@ export default function App() {
     toRevealItems.forEach((el) => observer.observe(el));
 
     return () => toRevealItems.forEach((el) => observer.unobserve(el));
+  }, []);
+
+  //Active the link of the NavBar on scroll
+  useEffect(() => {
+    const sections = ["home", "about", "skills", "contact"];
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.id;
+            setActiveSection(sectionId);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    sections.forEach((sectionId) => {
+      const section = document.getElementById(sectionId);
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
   }, []);
   return (
     <main>
@@ -30,7 +64,7 @@ export default function App() {
       <section id="contact" className="mb-4 pb-11 bg-white overflow-x-hidden">
         <Contact />
       </section>
-      <NavBar />
+      <NavBar activeSection={activeSection} />
       <Footer />
     </main>
   );
