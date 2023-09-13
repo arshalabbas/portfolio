@@ -4,7 +4,7 @@ import Wave from "../components/Wave";
 
 import { useForm, ValidationError } from "@formspree/react";
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xbjvywpv");
+  const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_ID);
   return (
     <section className="bg-white h-screen text-black w-full">
       <Wave />
