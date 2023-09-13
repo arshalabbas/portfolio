@@ -3,7 +3,7 @@ function NavLink({ label, href, activeId, id }) {
     <a
       className={`${
         activeId == id ? "opacity-100" : "opacity-50 hover:opacity-100"
-      } text-black`}
+      }`}
       href={href}
     >
       {label}

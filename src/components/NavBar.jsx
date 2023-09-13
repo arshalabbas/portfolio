@@ -2,7 +2,11 @@ import NavLink from "./NavLink";
 
 function NavBar({ activeSection }) {
   return (
-    <nav className="bs-container w-full sticky bottom-0 bg-white py-1 rounded-t-lg">
+    <nav
+      className={`bs-container w-full sticky bottom-0 z-50 ${
+        activeSection === "home" ? "bg-black text-white" : "bg-white text-black"
+      } py-1 rounded-t-lg`}
+    >
       <ul className="flex w-full justify-evenly">
         <li>
           <NavLink
