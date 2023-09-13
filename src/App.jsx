@@ -7,7 +7,8 @@ export default function App() {
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        entry.target.classList.toggle("reveal", entry.isIntersecting);
+        // entry.target.classList.toggle("reveal", entry.isIntersecting);
+        if (entry.isIntersecting) entry.target.classList.add("reveal");
       });
     });
 
