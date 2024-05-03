@@ -23,7 +23,7 @@ const About = () => {
             <ImagePoint label={"Adaptive"} imageURL={puzzleIcon} />
             <ImagePoint label={"Creative"} imageURL={lightBulbIcon} />
             <ImagePoint label={"Flexible"} imageURL={flexIcon} />
-            <ImagePoint label={"Continues Learner"} imageURL={codeIcon} />
+            <ImagePoint label={"Continuous Learner"} imageURL={codeIcon} />
           </div>
           <div className="flex flex-col items-center to-reveal from-r">
             <img
